@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volt Flip — Arcade Gravity Game</title>
+
+<!-- Open Graph meta tags — these control the share card preview -->
+<meta property="og:title" content="Volt Flip">
+<meta property="og:description" content="Flip gravity. Dodge walls. 7 modes. How far can you go?">
+<meta property="og:image" content="https://hardrockca.github.io/voltflip/share-icon.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta property="og:url" content="https://hardrockca.github.io/voltflip/share.html">
+<meta property="og:type" content="website">
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Volt Flip">
+<meta name="twitter:description" content="Flip gravity. Dodge walls. 7 modes. How far can you go?">
+<meta name="twitter:image" content="https://hardrockca.github.io/voltflip/share-icon.png">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #020408;
+    color: #fff;
+    font-family: -apple-system, 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    overflow: hidden;
+  }
+  /* Ambient glow behind icon */
+  .glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,212,255,0.15) 0%, rgba(0,100,200,0.05) 50%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    pointer-events: none;
+  }
+  .icon {
+    width: 140px;
+    height: 140px;
+    border-radius: 32px;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 60px rgba(0,212,255,0.3), 0 0 120px rgba(0,100,200,0.15);
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #00eeff 0%, #ff44cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .subtitle {
+    font-size: 15px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .tagline {
+    font-size: 18px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 40px;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 16px 40px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #00bbee 0%, #0088cc 100%);
+    box-shadow: 0 0 30px rgba(0,180,255,0.3), 0 4px 20px rgba(0,0,0,0.4);
+    transition: transform 0.15s, box-shadow 0.15s;
+    position: relative;
+    z-index: 1;
+  }
+  .btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 0 20px rgba(0,180,255,0.2), 0 2px 10px rgba(0,0,0,0.3);
+  }
+  .modes {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  .mode {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.35);
+    padding: 6px 14px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+  }
+  .redirect {
+    margin-top: 40px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.25);
+    position: relative;
+    z-index: 1;
+  }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<img class="icon" src="share-icon.png" alt="Volt Flip">
+<h1>VOLT FLIP</h1>
+<p class="subtitle">Arcade Gravity Game</p>
+<p class="tagline">Flip gravity. Dodge walls.<br>7 modes. How far can you go?</p>
+<a class="btn" href="https://apps.apple.com/us/app/volt-flip/id6760211353">Download Free</a>
+<div class="modes">
+  <span class="mode">CLASSIC</span>
+  <span class="mode">DRIFT</span>
+  <span class="mode">SPLIT</span>
+  <span class="mode">ECHO</span>
+  <span class="mode">SQUEEZE</span>
+  <span class="mode">VANISH</span>
+  <span class="mode">CHAOS</span>
+</div>
+<p class="redirect">Taking you to the App Store...</p>
+<script>
+  setTimeout(function(){
+    window.location.href='https://apps.apple.com/us/app/volt-flip/id6760211353';
+  }, 3000);
+</script>
+</body>
+</html>
